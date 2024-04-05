@@ -1,0 +1,537 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left:0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+    height: 100px;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+   display: inline-block; 
+   margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #8a1212;
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+
+    transition: 0.1s linear;
+}
+section nav .icon i{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color: #8a1212;
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 70px;
+}
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+}
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #8a1212;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+section p{
+    width: 550px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    margin-right: 50px;
+    bottom: 180px;
+    line-height: 22px;
+}
+section .main_btn{
+    background: #8a1212;
+    position: relative;
+    left: 100px;
+    bottom: 130px;
+    width: 150px;
+    cursor: pointer;
+text-align: center;
+padding: 12px 25px;
+border-radius: 7px;
+}
+section .main_btn a{
+    color: #f3f3ef;
+    margin-right: 5px;
+    text-decoration: none;
+    
+}
+section .main_btn i{
+    color: rgb(239, 239, 237);
+    transition: 0.3s;
+}
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+section .main_btn:hover{
+    background-color: rgb(243, 79, 79);
+}
+/*About*/
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .about_main .image img{
+
+    position: relative;
+
+}
+.about .about_main .about_text h1 span{
+    color:#8a1212;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+.about .about_main .about_text h3{
+    font-size: 30px ;
+    margin: 0 0 50px 0;
+}
+.about .about_main .about_text p{
+    width: 550px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+.about .about_main .about_text{
+    margin-right: 80px;
+}
+.about .about_btn{
+    background: #8a1212;
+    position: relative;
+    left: 44%;
+    bottom: 100px;
+    width: 150px;
+    cursor: pointer;
+text-align: center;
+padding: 12px 25px;
+border-radius: 7px;
+color: #f3f3ef;
+text-decoration: none;
+}
+.about_btn:hover{
+    background-color: rgb(243, 79, 79);
+}
+/*Menu*/
+.menu{
+  padding: 70px 0;
+    width: 100%;
+    margin-left: 50px;
+}
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu h1 span{
+    color: #8a1212;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #8a1212;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.menu .menu_box{
+    width: 95%;
+margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:10px;
+   
+}
+.menu .menu_box .menu_card{
+    width: 300px;
+    height: 450px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.menu .menu_box .menu_card .menu_img{
+    width: 250px;
+    height: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_img img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+object-position: center;
+transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_img:hover img{
+transform: scale(1.1);
+}
+.menu_info p{
+    text-align: center;
+    margin-top: 5px;
+    line-height: 19px;
+}
+.menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    color: #8a1212;
+}
+.menu_info h3{
+    text-align: center;
+    margin-top: 8px;
+    
+}
+.menu_icon{
+    text-align: center;
+    margin-top: 6px;
+    color: #8a1212;
+}
+.menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 10px;
+    margin: 0 80px;
+    margin-top: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.menu_btn:hover{
+    background-color: #440606;
+}
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -270px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.1s;
+}
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+opacity: 1;
+}
+.menu .menu_box .menu_card .small_card i{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height:50px ;
+    color: #440606;
+    cursor: pointer;
+    text-shadow: 0 0 2px #000;
+    transition: 0.1s;
+}
+.menu .menu_box .menu_card .small_card i:hover{
+color: #a20303;
+}
+
+.container{
+   width: 900px;
+   height: 500px;
+   display: flex;
+   gap: 15px;
+   margin-left: 200px;
+   margin-top: 40px;
+}
+.box{
+  border: solid white;
+  width: 20%;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box:hover{
+    width: 90%;
+    transition: 0.3s;
+}
+.gallery span{
+    color: #8a1212;
+    font-family: mv boli;
+}
+.gallery h1{
+    font-size: 55px;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+
+/*review*/
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review h1 span{
+    margin-left: 15px;
+    color: #8a1212;
+    font-family: mv boli;
+}
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #8a1212;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+.review_profile{
+height: 150px;
+width: 150px;
+}
+.review_profile img{
+    height: 100%;
+    width: 100%;
+}
+.review .review_box .review_card{
+    width: 350px;
+    height: 485px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.review .review_box .review_card .review_text{
+    text-align: center;
+    margin-top: 40px;
+}
+.review .review_box .review_card .review_text i{
+    margin-top: 5px;
+  
+}
+.review .review_box .review_card .review_text .review_social{
+    margin-top: 5px;
+}
+.review .review_box .review_card .review_text p{
+    margin-top: 15px;
+}
+.review .review_box .review_card .review_icon{
+    color: #8a1212;
+}
+
+/*order*/
+.order{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    
+   
+    background-size: cover;
+    background-position: center;
+}
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+.order h1 span{
+    color: #8a1212;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #8a1212;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.order .order_main .order_image img{
+    width: 500px;
+    height: 300px;
+    margin-left: 10px;
+}
+.order .order_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0 10px;
+}
+.order .order_main form .input p{
+    line-height: 25px;
+}
+.order .order_main form .input{
+    margin: 5px;
+}
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+.order .order_main form .input input:focus{
+    border: 2px solid #8a1212;
+}
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background: #8a1212;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.order .order_main form .order_btn:hover{
+    background: #a20303;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+footer .footer_main{
+    text-align: center;
+}
+
+footer .footer_main  h2{
+    color: #000;
+    margin-top: 5px;
+    font-size: 30px;
+}
+footer .footer_main p  {
+  
+    margin-top: 15px;
+}
+footer .footer_main i{
+    margin: 0 5px;
+cursor: pointer;
+margin-top: 15px;
+}
